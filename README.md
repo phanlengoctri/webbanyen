@@ -1,7 +1,7 @@
 <div align="center" size="30">
 
-# TECHZONE
-  _Giao diện Website TechZone_
+# BỬU YẾN
+  _Giao diện Website_
 </div>
   
 <p align="center">
@@ -17,7 +17,7 @@
   
 </div>
 
-Với nhu cầu mua sắm trực tuyến hiện nay ngày càng tăng, việc tạo ra website nhằm giúp khách hàng đáp ứng được nhu cầu và dễ dàng tham khảo các sản phẩm.Ngoài ra, còn giúp quản trị viên có thể quản lý được hàng hóa và đơn hàng tiện hơn.
+
 
 <p align="center">
   <img src="docs/Picture3.png" alt="1" width="45%" style="margin:10px;">
@@ -33,7 +33,7 @@ Với nhu cầu mua sắm trực tuyến hiện nay ngày càng tăng, việc t�
   
 </div>
 
-Từ dự án trên giúp tôi có thêm nhiều kinh nghiệm về lập trình web và rèn luyện kỹ năng thiết kế giao diện,xử lý dữ liệu, phân quyền truy cập, từ đó hiểu rõ hơn quy trình xây dựng một website thương mại điện tử hoàn chỉnh.
+
 
 - https://www.tawk.to/
 - https://dashboard.render.com/
