@@ -1,0 +1,169 @@
+/* Thiết lập khoảng cách để tránh header che khuất */
+body {
+  padding-top: 100px; /* Tạo khoảng trống để tránh bị che bởi header */
+  overflow-x: hidden;
+}
+
+.container {
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Danh sách sản phẩm */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Căn giữa các sản phẩm */
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1600px; /* Độ rộng tối đa cho danh sách sản phẩm */
+}
+
+/* Thẻ sản phẩm */
+.product {
+  width: 500px; /* Chiều rộng cố định cho mỗi sản phẩm */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  max-height: 450px; /* Chiều cao tối đa của ảnh sản phẩm */
+  object-fit: cover; /* Giúp ảnh không bị biến dạng */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.product p {
+  color: #666;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.product .detail-button,
+.product .buy-now,
+.product .add-to-card {
+  display: inline-block;
+  margin: 10px 5px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #28a745;
+  transition: background-color 0.3s;
+}
+
+.product .detail-button:hover,
+.product .buy-now:hover,
+.product .add-to-card:hover {
+  background-color: #218838;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .products-list {
+    flex-direction: column; /* Để các sản phẩm xếp dọc trên màn hình nhỏ */
+  }
+  .product {
+    width: 100%; /* Chiều rộng 100% để phù hợp với màn hình nhỏ */
+  }
+}
+/* CSS cho slider */
+.slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển động */
+}
+
+.slider img {
+  width: 100%;
+  object-fit: cover; /* Giúp hình ảnh vừa khung */
+  height: auto; /* Điều chỉnh chiều cao tự động */
+}
+
+/* Nút mũi tên */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Chỉ hiển thị ảnh có lớp .active */
+.slider img {
+  display: none;
+}
+
+.slider img.active {
+  display: block;
+}
+.img {
+  max-width: 500px;
+  height: 400px;
+}
+.moon-cake {
+  width: 1500px;
+  height: 600px;
+  padding-top: 20px;
+}
+.add-to-card {
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-card:hover {
+  background-color: #e68a00;
+}
+
+.add-to-card:active {
+  background-color: #cc7a00;
+}

@@ -1,0 +1,155 @@
+/* CSS cho avatar và menu */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 70px; /* Đảm bảo nội dung không bị che khuất bởi header */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 10px 20px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* Logo */
+.logo img {
+  width: 50px;
+}
+
+/* Danh mục */
+.category ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.category-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.category-item a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Tìm kiếm */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.search button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search button:hover {
+  background-color: #218838;
+}
+
+/* Container của avatar và các icon */
+.user {
+  display: flex;
+  align-items: center; /* Đảm bảo các icon và avatar căn chỉnh theo chiều dọc */
+  gap: 15px;
+}
+
+.avatar-container {
+  position: relative;
+  display: flex; /* Chuyển thành flex để căn chỉnh dễ dàng */
+  align-items: center; /* Đảm bảo rằng avatar và icon nằm ngang hàng */
+  padding-top: 0; /* Loại bỏ padding nếu cần */
+}
+
+/* Icon người dùng và giỏ hàng */
+.user a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex; /* Đảm bảo các icon được căn chỉnh */
+  align-items: center; /* Căn chỉnh các icon giữa */
+}
+
+/* Thêm một chút điều chỉnh nếu cần */
+.user a:hover {
+  color: #ccc;
+}
+
+/* Avatar hình ảnh */
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.avatar-image {
+  width: 40px; /* Kích thước lớn hơn để dễ nhìn */
+  height: 45px;
+  border-radius: 50%; /* Làm avatar thành hình tròn */
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease; /* Mượt mà hơn khi thay đổi hiệu ứng */
+}
+
+/* Hover hiệu ứng cho avatar */
+.avatar-image:hover {
+  transform: scale(1.1); /* Phóng to avatar khi hover */
+  border-color: #337ab7; /* Đổi màu đường viền khi hover */
+}
+
+/* Menu thả xuống */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 55px; /* Cải thiện vị trí của menu thả xuống */
+  right: 0;
+  background-color: rgb(96, 93, 93);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Mục trong menu thả xuống */
+.dropdown-menu a {
+  display: block;
+  padding: 12px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover hiệu ứng cho các mục menu */
+.dropdown-menu a:hover {
+  background-color: #f1f1f1; /* Màu nền sáng hơn khi hover vào mục */
+}
+
+/* Đảm bảo dropdown menu sẽ hiển thị khi có sự kiện */
+.dropdown-menu.show {
+  display: block;
+}

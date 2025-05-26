@@ -1,0 +1,201 @@
+/* CSS chung cho body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* CSS cho trang quản lý sản phẩm */
+.product-page {
+  padding-top: 80px; /* Khoảng cách cho nội dung không bị header che */
+}
+
+/* CSS cho menu */
+.menu {
+  padding-top: 70px; /* Khoảng cách cho menu */
+}
+
+/* CSS chỉ cho phần quản lý sản phẩm */
+.table-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  table-layout: fixed; /* Đảm bảo các cột không bị thu hẹp */
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  word-wrap: break-word; /* Đảm bảo từ dài sẽ tự xuống dòng */
+  white-space: normal; /* Cho phép xuống dòng khi cần */
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+table img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Nút xóa và cập nhật */
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-update {
+  color: white;
+  background-color: green;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.btn-update:hover {
+  background-color: #064214;
+}
+
+/* CSS cho menu */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 10px 20px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* Logo */
+.menu .logo img {
+  width: 50px;
+}
+
+/* Danh mục */
+.menu .category ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu .category-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.menu .category-item a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Tìm kiếm */
+.menu .search {
+  display: flex;
+  align-items: center;
+}
+
+.menu .search input[type="text"] {
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.menu .search button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu .search button:hover {
+  background-color: #218838;
+}
+
+/* Icon người dùng và giỏ hàng */
+.menu .user {
+  display: flex;
+  gap: 15px;
+}
+
+.menu .user a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu .user a:hover {
+  color: #ccc;
+}
+
+/* Nút đăng xuất */
+.menu .logout a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #e74c3c;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu .logout a:hover {
+  background-color: #c0392b;
+}
+/* Đảm bảo các cột ID và Giá nhỏ hơn, cột Mô tả lớn hơn */
+table th:nth-child(1), /* Cột ID */
+table td:nth-child(1) {
+  width: 5%; /* Đặt chiều rộng nhỏ cho cột ID */
+}
+
+table th:nth-child(3), /* Cột Giá */
+table td:nth-child(3) {
+  width: 10%; /* Đặt chiều rộng vừa phải cho cột Giá */
+}
+
+table th:nth-child(4), /* Cột Mô tả */
+table td:nth-child(4) {
+  width: 40%; /* Đặt chiều rộng lớn hơn cho cột Mô tả để chứa nhiều văn bản */
+}

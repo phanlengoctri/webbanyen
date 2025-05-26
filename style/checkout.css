@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5eadf;
+  margin: 0;
+  padding-top: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Đảm bảo form nằm giữa màn hình theo chiều dọc */
+  flex-direction: column; /* Đảm bảo các phần tử trong body căn giữa theo chiều dọc */
+}
+
+.container {
+  color: #333;
+
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #fff; /* Màu nền trắng cho form */
+  border-radius: 10px; /* Bo tròn các góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+  margin: 0 auto; /* Căn giữa theo chiều ngang */
+}
+
+h2 {
+  font-size: 24px; /* Giảm kích thước tiêu đề */
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.form-group {
+  display: flex; /* Đặt các phần tử trong .form-group thẳng hàng */
+  flex-direction: column; /* Đặt các phần tử theo chiều dọc nếu cần */
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: flex-start; /* Điều chỉnh vị trí của các thẻ input */
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  max-width: 400px; /* Đặt độ rộng của input */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select {
+  /* Đảm bảo các input có cùng độ dài */
+  margin-right: 20px;
+}
+
+.order-summary {
+  margin-top: 30px;
+  color: #333;
+}
+
+.order-summary table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-summary table th,
+.order-summary table td {
+  padding: 8px; /* Giảm padding trong bảng */
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.total {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.total h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.checkout-btn button {
+  padding: 8px 15px; /* Giảm kích thước nút */
+  font-size: 14px; /* Giảm kích thước font */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn button:hover {
+  background-color: #45a049;
+}
+
+.alert-success {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-content {
+  padding-left: 120px;
+}
+/* Style cho thông báo thành công */
+.alert-success {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none; /* Mặc định ẩn */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.alert-success.show {
+  display: block;
+}

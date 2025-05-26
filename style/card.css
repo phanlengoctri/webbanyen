@@ -1,0 +1,167 @@
+/* Đảm bảo body chiếm toàn bộ chiều cao của trang */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Sử dụng Flexbox để căn chỉnh phần content và footer */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  min-height: 100vh;
+  color: #333;
+  margin-top: 80px; /* Thêm margin để tránh bị che bởi header */
+  padding-bottom: 50px; /* Thêm padding cho footer không bị đè */
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+/* Footer luôn ở dưới cùng */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 28px;
+  color: #333;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 100px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+td img {
+  width: 100px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: normal;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.total {
+  text-align: right;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-right: 80px;
+}
+
+.checkout {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.checkout button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout button:hover {
+  background-color: #45a049;
+}
+
+td a.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+td a.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+td a,
+td a.remove-btn {
+  margin: 5px;
+}
+
+/* Cải thiện giao diện các thao tác cộng trừ */
+td a {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+td a:hover {
+  background-color: #ddd;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
+}

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Đảm bảo phần tử con nằm dưới nhau */
+    align-items: center;
+    min-height: 100vh;
+    background: url('../image/Logo/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center; 
+    color: #fff;
+    font-size: 30px;
+    margin-top: 120px; /* Khoảng cách giữa h1 và bảng */
+    margin-left: 120px;
+}
+
+form {
+    width: 100%; 
+    max-width: 700px; 
+    padding: 20px; 
+    border-radius: 15px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2px; 
+    color: #fff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #fff;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+
+input {
+    width: 100%; 
+    height: 100%;
+    background: #113922;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+
+.custom-btn {
+    flex: 1;
+    width: 48%; /* Đặt giảm một chút để tránh vượt quá 50% và để có chỗ cho margin */
+    height: 45px;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #113922; /* Màu sắc mặc định của mỗi nút */
+}
+
+.custom-btn:hover {
+    background-color: rgb(105, 52, 219); /* Màu sắc khi di chuột vào mỗi nút */
+}
+
+.custom-btn + .custom-btn {
+    margin-left: 10px; /* Khoảng cách giữa các nút, sử dụng margin-left để tránh khoảng trắng ở cuối dòng */
+    margin-right: 0;
+}
+
+

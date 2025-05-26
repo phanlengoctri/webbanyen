@@ -1,0 +1,117 @@
+/* CSS chung cho trang thêm sản phẩm */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Tạo khoảng cách cho nội dung không bị header che */
+.container {
+  padding-top: 100px; /* Khoảng cách từ phần header */
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Hiển thị thông báo thành công hoặc lỗi */
+#successMessage {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#successMessage.error {
+  color: red;
+}
+
+/* Style cho form thêm sản phẩm */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+/* CSS cho dropdown Loại sản phẩm */
+form select {
+  appearance: none; /* Loại bỏ mũi tên mặc định trên một số trình duyệt */
+  background-color: #f9f9f9; /* Màu nền nhẹ */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form select:hover {
+  border-color: #28a745; /* Đổi màu viền khi hover */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3); /* Tạo hiệu ứng đổ bóng */
+}
+
+form select:focus {
+  outline: none;
+  border-color: #218838; /* Đổi màu viền khi focus */
+  box-shadow: 0 0 8px rgba(33, 136, 56, 0.4); /* Hiệu ứng đổ bóng rõ hơn khi focus */
+}
+
+/* Style cho các tùy chọn bên trong dropdown */
+form select option {
+  background-color: #fff;
+  color: #333;
+  padding: 8px;
+}
+
+/* Style bổ sung cho biểu tượng dropdown nếu muốn */
+.dropdown-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #333;
+  font-size: 16px;
+}

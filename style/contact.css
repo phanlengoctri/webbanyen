@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5eadf;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+}
+
+.contact-content {
+  font-size: 40px;
+  padding-left: 40px;
+  color: black;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.map iframe {
+  width: 1400px;
+  height: 700px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container chính */
+.container {
+  width: 80%;
+
+  padding: 20px;
+
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Tiêu đề */
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h1 p {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Nội dung văn bản */
+p {
+  color: #555;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Danh sách địa chỉ */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Phần thông tin liên hệ */
+b {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Thêm khoảng cách giữa các phần */
+h1 + p,
+h1 + ul,
+h1 + b {
+  margin-top: 15px;
+}
