@@ -6,10 +6,10 @@
 </div>
   
 <p align="center">
-  <img src="" alt="1" width="45%" style="margin:10px;">
-  <img src="" alt="1" width="45%" style="margin:10px;">
-  <img src="" alt="1" width="45%" style="margin:10px;">
-  <img src="" alt="1" width="45%" style="margin:10px;">
+  <img src="docs/Picture2.png" alt="1" width="45%" style="margin:10px;">
+  <img src="docs/Picture3.png" alt="1" width="45%" style="margin:10px;">
+  <img src="docs/Picture4.png" alt="1" width="45%" style="margin:10px;">
+  <img src="docs/Picture5.png" alt="1" width="45%" style="margin:10px;">
 </p>
 
 
