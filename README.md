@@ -5,8 +5,8 @@
   _Bửu Yến Website Interface_
 </div>
   
-<p align="center" width="45%" style="margin:10px;">
-  ![Image](https://github.com/user-attachments/assets/7e9127e8-750a-4986-ba4f-7c1b4d26e81c)
+<p align="center">
+  <img src="" alt="1" width="45%" style="margin:10px;">
   <img src="" alt="1" width="45%" style="margin:10px;">
   <img src="" alt="1" width="45%" style="margin:10px;">
   <img src="" alt="1" width="45%" style="margin:10px;">
