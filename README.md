@@ -7,9 +7,10 @@
   
 <p align="center">
   <img src="docs/Picture2.jpg" alt="1" width="45%" style="margin:10px;">
-  <img src="docs/Picture3.png" alt="1" width="45%" style="margin:10px;">
-  <img src="docs/Picture4.png" alt="1" width="45%" style="margin:10px;">
-  <img src="docs/Picture5.png" alt="1" width="45%" style="margin:10px;">
+  <img src="docs/Picture9.png" alt="1" width="45%" style="margin:10px;">
+  <img src="docs/Picture11.jpg" alt="1" width="45%" style="margin:10px;">
+  <img src="docs/Picture14.jpg" alt="1" width="45%" style="margin:10px;">
+  <img src="docs/Picture19.jpg" alt="1" width="45%" style="margin:10px;">
 </p>
 
 
